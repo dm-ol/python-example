@@ -7,6 +7,13 @@ while True:
 print('Done!')
 
 # Ще один приклад break
+text = "OpenEDG Python Institute"
+for letter in text:
+    if letter == "P":
+        break
+    print(letter, end="")
+
+# Ще один приклад break
 print("Інструкція break:")
 for i in range(1, 6):
     if i == 3:
