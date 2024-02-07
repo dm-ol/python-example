@@ -6,6 +6,14 @@ for i in range(1, 6):
     print("Всередині циклу.", i)
 print("За межами циклу.")
 
+# Написати програму з циклом for та оператором continue. Програма повинна перебрати послідовність цифр,
+# замінити кожен 0 на x і вивести змінений рядок на екран.
+for digit in "0165031806510":
+    if digit == "0":
+        print("x", end="")
+        continue
+    print(digit, end="")
+
 # Ще один приклад continue
 largest_number = -99999999
 counter = 0

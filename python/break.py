@@ -6,6 +6,13 @@ while True:
     print(line)
 print('Done!')
 
+# Скласти програму з циклом for та оператором break. Програма повинна перебирати символи в адресі електронної пошти,
+# виведети з циклу при досягненні символу @ і виводити частину до @ в одному рядку
+for ch in "john.smith@pythoninstitute.org":
+    if ch == "@":
+        break
+    print(ch, end="")
+
 # Ще один приклад break
 text = "OpenEDG Python Institute"
 for letter in text:
