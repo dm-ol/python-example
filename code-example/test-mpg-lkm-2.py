@@ -18,11 +18,11 @@ def convert_fuel_consumption():
     if choice == 1:
         litres = float(input("Введіть витрату пального у літрах на 100 км: "))
         result = liters_100km_to_miles_gallon(litres)
-        print(f"Результат конвертування: {result} mpg")
+        print(f"Результат конвертування: {round(result, 2)} mpg")
     elif choice == 2:
         miles = float(input("Введіть витрату пального у милях на галон: "))
         result = miles_gallon_to_liters_100km(miles)
-        print(f"Результат конвертування: {result} л/100км")
+        print(f"Результат конвертування: {round(result, 2)} л/100км")
     else:
         print("Неправильний вибір опції.")
 
