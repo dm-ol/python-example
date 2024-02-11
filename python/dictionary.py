@@ -32,5 +32,18 @@ phone_numbers = {
                 'Suzy': 22657854310
 }
  
+# Щоб скопіювати словник, використовуйте метод copy():
+ukr_eng_dictionary = {
+    "замок": "castle",
+    "вода": "water",
+    "ґрунт": "soil"
+    }
+ 
+copy_dictionary = ukr_eng_dictionary.copy()
+ 
+# Перетворення кортежу у словник
+colors = (("green", "#008000"), ("blue", "#0000FF"))
 
+colors_dictionary = dict(colors)
+print(colors_dictionary)
  
