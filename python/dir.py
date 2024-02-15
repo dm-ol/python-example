@@ -1,10 +1,14 @@
 # Функція dir() повертає список допустимих атрибутів переданого об’єкту.
+print("dir для строки")
+number = 'bark'
+print(dir(number))
+
 print("dir для integer")
 number = int(12)
 print(dir(number))
 
 print("dir для float")
-number = int(12)
+number = float(12)
 print(dir(number))
 
 print("dir для списку")
