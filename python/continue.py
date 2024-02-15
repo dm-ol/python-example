@@ -21,15 +21,16 @@ counter = 0
 number = int(input("Введіть число або наберіть -1 для завершення програми: "))
 
 while number != -1:
-   if number == -1:
-      continue
-   counter += 1
+    if number == -1:
+        continue
+    counter += 1
 
-   if number > largest_number:
-      largest_number = number
-   number = int(input("Введіть число або наберіть -1 для завершення програми: "))
+    if number > largest_number:
+        largest_number = number
+    number = int(
+        input("Введіть число або наберіть -1 для завершення програми: "))
 
 if counter:
-   print("Найбільше число дорівнює", largest_number)
+    print("Найбільше число дорівнює", largest_number)
 else:
-   print("Ви не ввели жодного числа.")
+    print("Ви не ввели жодного числа.")

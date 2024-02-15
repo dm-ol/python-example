@@ -1,11 +1,12 @@
-# Метод — це по суті функція, яка "закріплена" за певним об'єктом і яка виконує певні дії над цим об'єктом. 
+# Метод — це по суті функція, яка "закріплена" за певним об'єктом і яка виконує певні дії над цим об'єктом.
 # Записується це наступним чином: об'єкт чи посилання на нього, далі ставиться крапка, і після крапки метод об'єкта:
 # object.method()
 
 #  Перевіряємо список доступних атрібутів для строки, в тому числі медоди:
 print("dir для строки")
 number = 'BarK'
-print(dir(number)) # Отримуємо список: ['__add__', '__class__', '__contains__', '__delattr__', '__dir__',
+# Отримуємо список: ['__add__', '__class__', '__contains__', '__delattr__', '__dir__',
+print(dir(number))
 # '__doc__', '__eq__', '__format__', '__ge__', '__getattribute__', '__getitem__', '__getnewargs__',
 # '__getstate__', '__gt__', '__hash__', '__init__', '__init_subclass__', '__iter__', '__le__',
 # '__len__', '__lt__', '__mod__', '__mul__', '__ne__', '__new__', '__reduce__', '__reduce_ex__',
@@ -19,8 +20,8 @@ print(dir(number)) # Отримуємо список: ['__add__', '__class__', '
 
 # Перевіримо деякі методи:
 
-print(number.upper()) # BARK
-print(number.lower()) # bark
-print(number.title()) # Bark
-print(number.capitalize()) # Bark
-print(number.replace("B", "P")) # ParK
+print(number.upper())  # BARK
+print(number.lower())  # bark
+print(number.title())  # Bark
+print(number.capitalize())  # Bark
+print(number.replace("B", "P"))  # ParK

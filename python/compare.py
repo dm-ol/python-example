@@ -1,6 +1,6 @@
 from functools import total_ordering
 
-@total_ordering
+total_ordering
 class Number:
    def __init__(self, value):
       self.value = value

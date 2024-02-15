@@ -7,6 +7,7 @@ def is_year_leap(year):
     else:
         return False
 
+
 def days_in_month(year, month):
     # Створення списку тривалості місяців, 28 днів для лютого буде змінено у випадку високосного року
     month_lengths = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
@@ -16,6 +17,7 @@ def days_in_month(year, month):
         return 29
     else:
         return month_lengths[month - 1]
+
 
 def day_of_year(year, month, day):
     # Перевірка на коректність введених значень
@@ -29,5 +31,6 @@ def day_of_year(year, month, day):
     total_days += day
 
     return total_days
+
 
 print("Номер дня:", day_of_year(2000, 5, 31))

@@ -6,7 +6,7 @@ def is_prime(num):
         if num % i == 0:
             return False
     return True
- 
+
 
 for i in range(1, 50):
     if is_prime(i + 1):

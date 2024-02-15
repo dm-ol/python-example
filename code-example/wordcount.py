@@ -1,19 +1,19 @@
 # Отримати ім’я файлу та відкрити його
-name = input('Вкажіть шлях до файлу:') 
+name = input('Вкажіть шлях до файлу:')
 handle = open(name, 'r')
 
 # Рахувати частоту слів
 counts = dict()
-for line in handle: 
-    words = line.split() 
+for line in handle:
+    words = line.split()
     for word in words:
-        counts[word] = counts.get(word,0) + 1
+        counts[word] = counts.get(word, 0) + 1
 
 # Знайти найуживаніше слово
-bigcount = None 
+bigcount = None
 bigword = None
-for word,count in counts.items():
-    if bigcount is None or count > bigcount: 
+for word, count in counts.items():
+    if bigcount is None or count > bigcount:
         bigword = word
         bigcount = count
 

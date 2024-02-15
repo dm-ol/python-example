@@ -4,4 +4,3 @@ print("List:", list_1)
 for value in list_1:
     if value > 20:
         print("The number is greater than 20:", value)
-    

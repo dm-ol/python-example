@@ -1,18 +1,18 @@
-# Методи та функції роботи зі словниками. 
+# Методи та функції роботи зі словниками.
 
 # Метод keys()
 # Метод повертає ітерований об'єкт, що складається з усіх ключів, знайдених у словнику.
 # Наявність набору ключів дає змогу легко та зручно отримати доступ до всього словника.
-dictionary =  {"cat": "chat", "dog": "chien", "horse": "cheval"}
- 
+dictionary = {"cat": "chat", "dog": "chien", "horse": "cheval"}
+
 for key in dictionary.keys():
     print(key, "->", dictionary[key])
- 
-# Метод items() 
+
+# Метод items()
 # Метод повертає кортежі (це перший приклад, де кортежі є чимось більшим,
 # ніж просто прикладом самих себе), де кожен кортеж є парою ключ-значення.
-dictionary =  {"cat": "chat", "dog": "chien", "horse": "cheval"}
- 
-for english, french in dictionary.items(): # кортеж було використано як змінну циклу for.
+dictionary = {"cat": "chat", "dog": "chien", "horse": "cheval"}
+
+# кортеж було використано як змінну циклу for.
+for english, french in dictionary.items():
     print(english, "->", french)
- 

@@ -31,6 +31,7 @@ print(text)
 # Define a function named `update_file` that takes in two parameters: `import_file` and `remove_list`
 # and combines the steps you've written in this lab leading up to this
 
+
 def update_file(import_file, remove_list):
 
     # Build `with` statement to read in the initial contents of the file
@@ -74,7 +75,9 @@ def update_file(import_file, remove_list):
 
 # Call `update_file()` and pass in "allow_list.txt" and a list of IP addresses to be removed
 
-update_file("data/allow_list.txt", ["192.168.25.60", "192.168.90.124", "192.168.60.153"])
+
+update_file("data/allow_list.txt",
+            ["192.168.25.60", "192.168.90.124", "192.168.60.153"])
 
 # Build `with` statement to read in the updated file
 

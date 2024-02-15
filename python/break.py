@@ -33,15 +33,15 @@ largest_number = -99999999
 counter = 0
 
 while True:
-     number = int(input("Введіть число або введіть -1 для завершення програми: "))
-     if number == -1:
-         break
-     counter += 1
-     if number > largest_number:
-       largest_number = number
+    number = int(
+        input("Введіть число або введіть -1 для завершення програми: "))
+    if number == -1:
+        break
+    counter += 1
+    if number > largest_number:
+        largest_number = number
 
 if counter != 0:
     print("Найбільше число", largest_number)
 else:
     print("Ви не ввели жодного числа.")
-

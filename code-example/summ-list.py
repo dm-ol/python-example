@@ -10,8 +10,9 @@ print("Largest summ from the list:", list_sum)
 my_list = [2, 42, 13, 88, 36, 49, 114, 99, 41, 9, 63, 200]
 total = 0
 # змінна i приймає значення 0, 1, 2, 3 та 4, потім індексує список, вибираючи наступний елемент: перший, другий, третій, четвертий і п'ятий
-for i in range(len(my_list)):  # використовується функція len() для визначення точної кількості елементів списку
-    total = total + my_list[i] # total += my_list[i]
+# використовується функція len() для визначення точної кількості елементів списку
+for i in range(len(my_list)):
+    total = total + my_list[i]  # total += my_list[i]
 
 print(total)
 
@@ -19,10 +20,10 @@ print(total)
 
 my_list = [2, 42, 13, 88, 36, 49, 114, 99, 41, 9, 63, 200]
 total = 0
- 
+
 for i in my_list:
-    total = total + i # total += i
- 
+    total = total + i  # total += i
+
 print(total)
 
 # or
@@ -30,4 +31,3 @@ print(total)
 my_list = [2, 42, 13, 88, 36, 49, 114, 99, 41, 9, 63, 200]
 total = sum(my_list)
 print(total)
- 

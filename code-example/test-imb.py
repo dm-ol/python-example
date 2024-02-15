@@ -1,19 +1,18 @@
 # Оцінка ІМТ та перетворення британські одиниці вимірювання у метричні
 
-def ft_and_inch_to_m(ft, inch = 0.0): # перетворення футів і дюймів у метри
+def ft_and_inch_to_m(ft, inch=0.0):  # перетворення футів і дюймів у метри
     return ft * 0.3048 + inch * 0.0254
- 
- 
-def lb_to_kg(lb): # перетворення фунтів у кілограми
+
+
+def lb_to_kg(lb):  # перетворення фунтів у кілограми
     return lb * 0.4535923
- 
- 
-def bmi(weight, height): # розрахунок маси тіла
+
+
+def bmi(weight, height):  # розрахунок маси тіла
     if height < 1.0 or height > 2.5 or weight < 20 or weight > 200:
         return None
- 
+
     return weight / height ** 2
- 
- 
-print(bmi(weight = lb_to_kg(176), height = ft_and_inch_to_m(5, 7))) # вивід результату
- 
+
+
+print(bmi(weight=lb_to_kg(176), height=ft_and_inch_to_m(5, 7)))  # вивід результату
