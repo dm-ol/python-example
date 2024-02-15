@@ -75,7 +75,6 @@ def draw_move(board): # Функція відповідає за хід комп
         row, col = free[this]
         board[row][col] = 'X'
 
-
 board = [ [3 * j + i + 1 for i in range(3)] for j in range(3) ] # очистити дошку
 board[1][1] = 'X' # спочатку вписуємо 'X' посередині
 free = make_list_of_free_fields(board)
