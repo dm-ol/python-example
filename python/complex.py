@@ -36,3 +36,13 @@ print('Type of b is', type(a))
 c = 0j
 print('c =', c)
 print('Type of c is', type(c))
+
+# Математичні операції з комплексними числами
+
+comp_a = 10 + 12j
+comp_b = 4 + 5j
+
+print(comp_a + comp_b)
+print(comp_a - comp_b)
+print(comp_a * comp_b)
+print(comp_a / comp_b)
