@@ -9,13 +9,13 @@ from PIL import Image
 import pytesseract
 
 # Конвертуємо картинку в текст та виводимо результат
-print(pytesseract.image_to_string(Image.open('test.png'))
+print(pytesseract.image_to_string(Image.open('test.png')))
 
 # Вказуємо англійську мову в аргументах
 print(pytesseract.image_to_string('test-english.jpg', lang='eng'))
 
 try:
-   # Задаємо максимальний час очікування
-   print(pytesseract.image_to_string('test.jpg', timeout=2))
+    # Задаємо максимальний час очікування
+    print(pytesseract.image_to_string('test.jpg', timeout=2))
 except RuntimeError as timeout_error:
-   pass
+    pass
