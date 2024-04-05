@@ -32,6 +32,16 @@ phone_numbers = {
     'Suzy': 22657854310
 }
 
+# Щоб змінити значення в словнику:
+dictionary = {
+    "cat": "chat",
+    "dog": "chien",
+    "horse": "cheval"
+}
+print(dictionary)
+dictionary['cat'] = 'Tom'
+print(dictionary)
+
 # Щоб скопіювати словник, використовуйте метод copy():
 ukr_eng_dictionary = {
     "замок": "castle",
