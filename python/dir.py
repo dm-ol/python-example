@@ -18,3 +18,11 @@ print(dir(list_1))
 print("dir для кортежу")
 tuple_list = (1, 12, 42, 55)
 print(dir(tuple_list))
+
+print("dir для словника")
+dict_1 = {
+    'Brand': 'Honda',
+    'Model': 'CR-V',
+    'Type': 'Hybrid',
+}
+print(dir(dict_1))
