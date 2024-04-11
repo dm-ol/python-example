@@ -29,8 +29,8 @@ print(my_tuple[:])
 
 my_tuple = ('a', 'p', 'p', 'l', 'e',)
 
-print(my_tuple.count('p'))  # виведе 2
-print(my_tuple.index('l'))  # виведе 3
+print(my_tuple.count('p'))  # рахує кількість 'р', виведе 2
+print(my_tuple.index('l'))  # показує номер в кортежі, виведе 3
 
 # Ми можемо використовувати цикл for для перебору елементів кортежу. Наприклад:
 
@@ -45,3 +45,15 @@ for language in languages:
 all_t = languages + my_tuple
 
 print(all_t)
+
+# Зміна кортежу, шляхом конвертації у список і назад:
+
+t_set = (255, 322, 190)
+
+print(t_set)
+
+l_set = list(t_set)
+l_set.append(662)
+
+t_set2 = tuple(l_set)
+print(t_set2)
