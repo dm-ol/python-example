@@ -39,3 +39,9 @@ languages = ('Python', 'Swift', 'C++')
 # Перебираємо та виводимо елементи кортежу
 for language in languages:
     print(language)
+
+# Об'єднуємо кортежі
+
+all_t = languages + my_tuple
+
+print(all_t)
