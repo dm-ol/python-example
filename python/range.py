@@ -17,6 +17,10 @@ other_range = range(5, 21, 5)  # range (початок, кінець, крок �
 print(other_range)
 print(list(other_range))
 
+print(other_range.start)  # отримання початку діапазону
+print(other_range.stop)  # отримання кінця діапазону
+print(other_range.step)  # отримання кроку діапазону
+
 for i in range(3):
     print(i, end=" ")  # результат: 0 1 2
 
