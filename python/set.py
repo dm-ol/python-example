@@ -23,3 +23,11 @@ empty_set = set()
 
 # Перевірка типу даних empty_set
 print('Data type of empty_set:', type(empty_set))
+
+# Ітерація по множині в Python
+
+fruits = {"Apple", "Peach", "Mango"}
+
+# Використовуємо цикл for для доступу до кожного елемента
+for fruit in fruits:
+    print(fruit)
