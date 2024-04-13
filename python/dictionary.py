@@ -42,7 +42,7 @@ print(dictionary)
 dictionary['cat'] = 'Tom'
 print(dictionary)
 
-# Щоб скопіювати словник, використовуйте метод copy():
+# Щоб скопіювати словник, використовуйте метод copy(), інакше копіюється тільки посилання на словник:
 ukr_eng_dictionary = {
     "замок": "castle",
     "вода": "water",
