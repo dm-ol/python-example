@@ -16,3 +16,17 @@ model = ["R8", "Julia", "850", "FXX", "SLR"]
 
 cars = merge_list_to_dict(brand, model)
 print(cars)
+
+
+# Створіть функцію update_car_info, у якій всі іменовані аргументи будуть об'єднуватись
+# у словник car. Додайте в словник новий ключ is_available з значенням True та поверніть
+# із функції змінений словник.
+
+def update_car_info(**car):
+    car['is_available'] = True
+    return car
+
+
+# Додаєм аргументи з ключовими словами
+car_info = update_car_info(brand='Audi', price=80000)
+print(car_info)
