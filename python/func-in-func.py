@@ -10,8 +10,8 @@ def get_weekday():
 
 
 def create_new_post(post, weekday=get_weekday()):
-    post_copy = post.copy()
-    post_copy['created_on_weekday'] = weekday
+    post_copy = post.copy()  # Робимо копію initial_post, щоб не змінювати його
+    post_copy['created_on_weekday'] = weekday  # Додаємо в post_copy новий ключ
     return post_copy
 
 # Створюєм аргументи для функції
