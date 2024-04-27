@@ -63,6 +63,12 @@ print(not None)          # True
 print(not ())       # True
 print(not 10)       # False
 
+# Логічне НЕ НЕ (not not). При використанні зі значенням True, отримаєм True. А з False отримаємо False.
+print(not not True)          # True
+print(not not None)          # False
+print(not not ())       # False
+print(not not 10)       # True
+
 
 # Оператори тотожності в Python. В Python оператори is та is not використовуються для перевірки того,
 # чи знаходяться два об’єкти в одній і тій же частині пам’яті. Дві однакові за значеннями змінні не завжди є ідентичними.
