@@ -50,11 +50,11 @@ a **= 8  # a = a ** 8
 
 # Логічні оператори в Python
 
-# Логічне І (and)
+# Логічне І (and). Логічне І: True, якщо обидва операнди дорівнюють True.
 print(True and True)     # True
 print(True and False)    # False
 
-# Логічне АБО (or)
+# Логічне АБО (or). Логічне АБО: True, якщо хоча б один з операндів дорівнює True.
 print(True or False)     # True
 
 # Логічне НЕ (not). При використанні зі значенням False, отримаєм True і навпаки.
