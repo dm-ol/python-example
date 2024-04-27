@@ -15,6 +15,25 @@ print(car_price)  # Новий словник з новим ключем Price
 
 print(car)  # Перший словник без змін
 
+# Об'єднання словників
+
+car_3_inf = {
+    "brand": "Chevrolet",
+    "model": "Corvette",
+    "year": 1968
+}
+
+car_3_set = {
+    "color": "Red",
+    "price": 80000
+}
+
+car_3 = {
+    **car_3_inf,
+    **car_3_set
+}
+
+print(car_3)
 
 # Варіант перезапису ключа в словнику
 
