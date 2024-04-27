@@ -57,8 +57,11 @@ print(True and False)    # False
 # Логічне АБО (or)
 print(True or False)     # True
 
-# Логічне НЕ (not)
+# Логічне НЕ (not). При використанні зі значенням False, отримаєм True і навпаки.
 print(not True)          # False
+print(not None)          # True
+print(not ())       # True
+print(not 10)       # False
 
 
 # Оператори тотожності в Python. В Python оператори is та is not використовуються для перевірки того,
