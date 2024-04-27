@@ -20,7 +20,7 @@ def function():
 
 # Ігнорування помилки
 try:
-    do_something()
+    print(1)
 except:
     pass
 
