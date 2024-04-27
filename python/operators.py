@@ -47,3 +47,15 @@ a **= 8  # a = a ** 8
 2 >= 4  # False
 # <=	Менше або Дорівнює
 2 <= 4  # True
+
+# Логічні оператори в Python
+
+# Логічне І (and)
+print(True and True)     # True
+print(True and False)    # False
+
+# Логічне АБО (or)
+print(True or False)     # True
+
+# Логічне НЕ (not)
+print(not True)          # False
