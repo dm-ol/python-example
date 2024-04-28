@@ -3,6 +3,7 @@
 
 # Оголошуємо лямбда-функцію
 # greet = lambda : print('Hello, World!')
+from functools import reduce
 def greet(): return print('Hello, World!')
 
 
@@ -42,3 +43,34 @@ my_list = [1, 5, 4, 6, 8, 11, 3, 12]
 new_list = list(map(lambda x: x * 2, my_list))
 
 print(new_list)
+
+
+# Функція reduce() приймає як аргументи функцію і список. Функція викликається за допомогою лямбда-функції
+# та ітерованого об'єкта і повертається новий зменшений результат. Так виконується повторювана операція
+# над парами ітерованих об'єктів. Функція reduce() входить до складу модуля functools.
+
+
+current_list = [5, 15, 20, 30, 50, 55, 75, 60, 70]
+summa = reduce((lambda x, y: x + y), current_list)
+print(summa)
+
+
+# У цьому прикладі ми будемо використовувати лямбда-функцію зі списковим включенням і лямбда-функцію з циклом for. Ми виведемо на екран таблицю з 10 елементів.
+
+tables = [lambda x=x: x*10 for x in range(1, 11)]
+for table in tables:
+    print(table())
+
+
+# Лямбда-функції не допускають використання декількох операторів, однак ми можемо створити дві лямбда-функції,
+# а потім викликати другу лямбда-функцію як параметр для першої функції. Давайте спробуємо знайти другий за величиною елемент, використовуючи лямбду.
+
+current_list = [[10, 6, 9], [0, 14, 16, 80], [8, 12, 30, 44]]
+# sorted_list = lambda x: (sorted(i) for i in x)
+def sorted_list(x): return (sorted(i) for i in x)
+# second_largest = lambda x, func: [y[len(y)-2] for y in func(x)]
+def second_largest(x, func): return [y[len(y)-2] for y in func(x)]
+
+
+result = second_largest(current_list, sorted_list)
+print(result)
