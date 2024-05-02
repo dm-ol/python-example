@@ -2,7 +2,7 @@
 
 try:
     print(10 / 0)
-except ZeroDivisionError as e:
-    print(type(e))
-    print("Error:", e)
+except ZeroDivisionError as err:
+    print(type(err))
+    print("Error:", err)
 print("Continue...")
