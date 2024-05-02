@@ -24,3 +24,15 @@ else:
     print("There was no error.")
 finally:
     print("Continue...")
+
+# або
+
+try:
+    print(10 / 0)
+except Exception as err:
+    print(type(err))
+    print("Error:", err)
+else:
+    print("There was no error.")
+finally:
+    print("Continue...")
