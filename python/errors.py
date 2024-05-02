@@ -17,4 +17,7 @@ except NameError as err:
 except ValueError as err:
     print(type(err))
     print("Error:", err)
+except AttributeError as err:
+    print(type(err))
+    print("Error:", err)
 print("Continue...")
