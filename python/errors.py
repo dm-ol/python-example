@@ -1,7 +1,7 @@
 # Вивід помилки в коді
 
 try:
-    print(a10 / 0)
+    print(10 / 1)
 except ZeroDivisionError as err:
     print(type(err))
     print("Error:", err)
@@ -20,4 +20,7 @@ except ValueError as err:
 except AttributeError as err:
     print(type(err))
     print("Error:", err)
-print("Continue...")
+else:
+    print("There was no error.")
+finally:
+    print("Continue...")
