@@ -3,7 +3,7 @@
 # Під капотом — алгоритм відстані Левенштейна. А сам код заснований на статті,
 # (https://norvig.com/spell-correct.html) написаній у блозі Пітера Норвіга.
 
-from spellchecker import SpellChecker
+from python.modules.spellchecker import SpellChecker
 
 spell = SpellChecker()
 
