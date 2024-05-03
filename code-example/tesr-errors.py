@@ -1,4 +1,4 @@
-#
+# Приклад коду для визову та обробки помилки
 
 def image_info(img):
     if ('image_id' not in img) or ('image_title' not in img):
@@ -11,4 +11,7 @@ image = {
     "image_ids": 232
 }
 
-print(image_info(image))
+try:
+    print(image_info(image))
+except TypeError as err:
+    print(err)
