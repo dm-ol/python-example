@@ -4,7 +4,7 @@
 # Example 1
 
 
-def nums_div(a, b):
+def nums_div(a, b):  # Генерація помилки ValueError
     if b == 0:
         raise ValueError("Second argument can't be 0")
     return a / b
@@ -12,9 +12,7 @@ def nums_div(a, b):
 
 try:
     nums_div(12, 0)
-except ZeroDivisionError as err:
-    print(err)
-except ValueError as err:
+except Exception as err:
     print(err)
 
 # Example 2
