@@ -37,3 +37,17 @@ fruits = ("apple", "mango", "papaya", "pineapple", "cherry")
 print(green)
 print(tropic)
 print(red)
+
+
+# Розпаковка списка (list) для функції
+
+my_moto = ["Honda", "NC 750X"]
+
+
+def moto_info(manuf, model):
+    if not model:
+        return f"{manuf} is best motorcicle, but no model"
+    return f"{manuf} is best manufacturer, especially {model}"
+
+
+print(moto_info(*my_moto))
