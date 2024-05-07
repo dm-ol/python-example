@@ -20,7 +20,7 @@ print(green)
 print(yellow)
 print(red)
 
-#
+# Групування з 3-го до останнього
 fruits = ("apple", "banana", "cherry", "strawberry", "raspberry")
 
 (green, yellow, *red) = fruits
@@ -29,7 +29,7 @@ print(green)
 print(yellow)
 print(red)
 
-#
+# Групування з 2-го по передостанній
 fruits = ("apple", "mango", "papaya", "pineapple", "cherry")
 
 (green, *tropic, red) = fruits
