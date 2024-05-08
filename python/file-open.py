@@ -16,3 +16,10 @@ file1 = open("errors.md", "r")
 file1 = open("test.txt")      # рівнозначний 'r' або 'rt'
 file1 = open("test.txt", 'w')  # запис у текстовому режимі
 file1 = open("img.bmp", 'r+b')  # читання та запис у двійковому режимі
+
+
+# В Python ми можемо використовувати синтаксис with...open для автоматичного закриття файлу.
+
+with open("sample.txt", "r") as file1:
+    read_content = file1.read()
+    print(read_content)
