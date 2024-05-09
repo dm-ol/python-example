@@ -35,3 +35,21 @@ else:
     print('Negative number')
 
 print('This statement is always executed')
+
+# Ми також можемо використовувати один оператор if всередині іншого оператора if. Це називається вкладеним оператором if.
+
+number_4 = 10
+
+# Зовнішній оператор if
+if (number_4 >= 0):
+    # Внутрішній оператор if
+    if number_4 == 0:
+        print('Number is 0')
+
+    # Внутрішній оператор else
+    else:
+        print('Number is positive')
+
+# Зовнішній оператор else
+else:
+    print('Number is negative')
