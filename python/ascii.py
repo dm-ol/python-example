@@ -21,4 +21,8 @@ set = {'Π', 'Φ', 'η'}
 
 print(ascii(set))
 
-#
+# Функція ascii() з кортежем
+
+tuple = ('ö', '√', '¶', 'Ð', 'ß')
+
+print(ascii(tuple))
