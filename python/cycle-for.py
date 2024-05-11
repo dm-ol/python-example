@@ -46,3 +46,15 @@ for i in digits:
     print(i)
 else:
     print("No items left.")
+
+
+# Цикл for зі словником (dict)
+
+cars_price = {"Audi Q8": 86000,
+              "BMW X6": 80000,
+              "Mercedes GLE": 92000
+              }
+
+for car in cars_price:
+    # де car - ключ,  car_price[car] - значення ключа
+    print(car, cars_price[car])

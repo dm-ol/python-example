@@ -63,3 +63,5 @@ while counter < 3:
     counter = counter + 1
 else:
     print('Inside else')
+
+# Цикл while зі словником (dict)
