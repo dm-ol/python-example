@@ -70,3 +70,9 @@ for car in cars_price.items():
     # де car - ключ,  price - значення ключа
     car, price = car
     print(car, price)
+
+# or shortest
+
+for car, price in cars_price.items():
+    # де car - ключ,  price - значення ключа
+    print(car, price)
