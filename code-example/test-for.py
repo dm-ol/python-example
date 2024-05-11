@@ -1,4 +1,4 @@
-#
+# First test
 
 my_dict = {"key1": True, "key2": 2, "key3": 42}
 
@@ -27,7 +27,7 @@ def filter_list(list_to_filter, value_type):
 
 print(filter_list([35, True, "eleven", 10], int))
 
-# or with isinstance
+# or with isinstance (not recommended, because bool is subclass int)
 
 
 def filter_list(list_to_filter, value_type):
