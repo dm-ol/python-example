@@ -26,3 +26,16 @@ def filter_list(list_to_filter, value_type):
 
 
 print(filter_list([35, True, "eleven", 10], int))
+
+# or with isinstance
+
+
+def filter_list(list_to_filter, value_type):
+    filtered_list = []
+    for element in list_to_filter:
+        if isinstance(element, value_type):
+            filtered_list.append(element)
+    return filtered_list
+
+
+print(filter_list([35, True, "eleven", 10], int))
