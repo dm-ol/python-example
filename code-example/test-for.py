@@ -13,3 +13,16 @@ def dict_to_list(convert_dict):
 
 
 print(dict_to_list(my_dict))
+
+
+#
+
+def filter_list(list_to_filter, value_type):
+    filtered_list = []
+    for element in list_to_filter:
+        if type(element) == value_type:
+            filtered_list.append(element)
+    return filtered_list
+
+
+print(filter_list([35, True, "eleven", 10], int))
