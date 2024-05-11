@@ -58,3 +58,15 @@ cars_price = {"Audi Q8": 86000,
 for car in cars_price:
     # де car - ключ,  car_price[car] - значення ключа
     print(car, cars_price[car])
+
+# Цикл for зі словником (dict) з методом items
+
+cars_price = {"Audi Q8": 86000,
+              "BMW X6": 80000,
+              "Mercedes GLE": 92000
+              }
+
+for car in cars_price.items():
+    # де car - ключ,  price - значення ключа
+    car, price = car
+    print(car, price)
