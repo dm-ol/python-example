@@ -52,3 +52,13 @@ while n > 1:
     print(n)
     n = n - 1
 print("Рівно одиниця:", n)
+
+# У Python цикл while може мати необов’язковий блок else, який виконуватиметься після того, як умова циклу стане False.
+
+counter = 0
+
+while counter < 3:
+    print('Inside loop')
+    counter = counter + 1
+else:
+    print('Inside else')
