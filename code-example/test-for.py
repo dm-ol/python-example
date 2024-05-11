@@ -1,4 +1,4 @@
-# First test
+# First test (Timing 14:25)
 
 my_dict = {"key1": True, "key2": 2, "key3": 42}
 
@@ -15,7 +15,7 @@ def dict_to_list(convert_dict):
 print(dict_to_list(my_dict))
 
 
-# Test 2
+# Test 2 (Timing 14:25)
 
 def filter_list(list_to_filter, value_type):
     filtered_list = []
