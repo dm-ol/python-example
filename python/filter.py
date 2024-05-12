@@ -49,3 +49,15 @@ even_numbers_iterator = filter(lambda x: (x % 2 == 0), numbers)
 even_numbers = list(even_numbers_iterator)
 
 print(even_numbers)
+
+# Приклад №3: Використання None як функції усередині функції filter()
+
+# Випадковий перелік
+random_list = [1, 'a', 0, False, True, '0']
+
+filtered_iterator = filter(None, random_list)
+
+# Конвертуємо в список
+filtered_list = list(filtered_iterator)
+
+print(filtered_list)
