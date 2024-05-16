@@ -41,4 +41,3 @@ class Person:
 
 person = Person(23, 'Adam')
 print(hash(person))
-Результат:
