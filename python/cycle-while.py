@@ -64,4 +64,9 @@ while counter < 3:
 else:
     print('Inside else')
 
-# Цикл while зі словником (dict)
+# Цикл while з break
+
+while True:
+    answer = input("Enter yes or no: ")
+    if answer == "no":
+        break
