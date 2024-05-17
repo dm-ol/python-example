@@ -31,3 +31,19 @@ print(absolute_nums)
 
 absolute_nums = [abs(num) for num in all_nums]
 print(absolute_nums)
+
+
+# Original_3
+
+my_set = {1, 10, 15, 20}
+
+new_set = set()
+
+for val in my_set:
+    new_set.add(val * val)
+
+print(new_set)
+
+# Shorter_3
+new_set = {val * val for val in my_set}
+print(new_set)
