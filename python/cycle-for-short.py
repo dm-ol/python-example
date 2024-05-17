@@ -47,3 +47,25 @@ print(new_set)
 # Shorter_3 (set)
 new_set = {val * val for val in my_set}
 print(new_set)
+
+
+# Original_4 (dict)
+
+my_scores = {
+    'a': 22,
+    'b': 12,
+    'c': 5,
+    'd': 9
+}
+
+scores = {}
+
+for key, value in my_scores.items():
+    scores[key] = value * 10
+
+print(scores)
+
+# Shorter_4 (dict)
+
+scores = {key: value * 10 for key, value in my_scores.items()}
+print(scores)
