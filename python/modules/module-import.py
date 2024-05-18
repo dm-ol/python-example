@@ -1,7 +1,7 @@
-# First variant
+# First variant (all module)
 
 import math
 
-# Second variant
+# Second variant (func from module)
 
 from math import pi
