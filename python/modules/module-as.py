@@ -8,3 +8,15 @@
 import math as m
 
 print(m.sin(m.pi/2))
+
+
+# У свою чергу, коли ви використовуєтез імені імпорту модуляваріант, і вам потрібно змінити назву функції,
+# ви створюєте псевдонім для функції. Це призведе до того, що ім’я буде замінено вибраним вами псевдонімом.
+
+# Syntax: from module import name as alias
+# from module import n as a, m as b, o as c
+
+# Example
+
+# from math import pi as PI, sin as sine
+# print(sine(PI/2))
