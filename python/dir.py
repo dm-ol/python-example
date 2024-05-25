@@ -1,4 +1,5 @@
 # Функція dir() повертає список допустимих атрибутів переданого об’єкту.
+import math
 print("dir для строки")
 number = 'bark'
 print(dir(number))
@@ -26,3 +27,9 @@ dict_1 = {
     'Type': 'Hybrid',
 }
 print(dir(dict_1))
+
+# Наприклад, ви можете запустити такий код, щоб надрукувати імена всіх сутностей у математичному модулі:
+
+print("dir для MATH")
+for name in dir(math):
+    print(name, end="∖t")
