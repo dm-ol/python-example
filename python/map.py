@@ -20,3 +20,38 @@ squared_numbers_iterator = map(square, numbers)
 # Конвертуємо в список
 squared_numbers = list(squared_numbers_iterator)
 print(squared_numbers)
+
+
+# Приклад №1: Робота функції map()
+
+def calculateSquare(n):
+    return n*n
+
+
+numbers = (1, 2, 3, 4)
+result = map(calculateSquare, numbers)
+print(result)
+
+# Конвертуємо об'єкт map у множину
+numbersSquare = set(result)
+print(numbersSquare)
+
+
+# Приклад №2: Як використовувати лямбда-функцію з функцією map()?
+
+numbers = (1, 2, 3, 4)
+result = map(lambda x: x*x, numbers)
+print(result)
+
+# Конвертуємо об'єкт map у множину
+numbersSquare = set(result)
+print(numbersSquare)
+
+
+# Приклад №3: Передача кількох ітераторів у функцію map() з використанням лямбда-функції
+
+num1 = [4, 5, 6]
+num2 = [5, 6, 7]
+
+result = map(lambda n1, n2: n1+n2, num1, num2)
+print(list(result))
