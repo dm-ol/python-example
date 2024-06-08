@@ -49,3 +49,27 @@ print(py_list[slice_object])
 # Містить індекси 1 та 3
 slice_object = slice(1, 5, 2)
 print(py_tuple[slice_object])
+
+# Приклад №5: Отримання підсписку та підкортежу за допомогою від’ємного індексу
+
+py_list = ['P', 'y', 't', 'h', 'o', 'n']
+py_tuple = ('P', 'y', 't', 'h', 'o', 'n')
+
+# Містить індекси -1, -2 та -3
+slice_object = slice(-1, -4, -1)
+print(py_list[slice_object])
+
+# Містить індекси -1 та -3
+slice_object = slice(-1, -5, -2)
+print(py_tuple[slice_object])
+
+
+# Приклад №6: Використання індексування для зрізу
+
+py_string = 'Python'
+
+# Містить індекси 0, 1 та 2
+print(py_string[0:3])
+
+# Містить індекси 1 та 3
+print(py_string[1:5:2])
