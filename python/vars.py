@@ -12,5 +12,19 @@ print(vars(dict))
 
 string = "Jones"
 
-# Функція vars() з рядком
+# Функція vars() з рядком (error)
 print(vars(string))
+
+# Приклад №3: Функція vars() з користувацьким об’єктом
+
+
+class Fruit:
+    def __init__(self, apple=5, banana=10):
+        self.apple = apple
+        self.banana = banana
+
+
+eat = Fruit()
+
+# Повертаємо __dict__ об'єкта eat
+print(vars(eat))
