@@ -27,3 +27,15 @@ print(bytes(mv[0:2]))
 
 # Створюємо список з представлення пам'яті
 print(list(mv[0:3]))
+
+# Приклад №2: Зміна внутрішніх даних за допомогою представлення пам’яті
+
+# Випадковий байтовий масив
+random_byte_array = bytearray('ABC', 'utf-8')
+print('Before updation:', random_byte_array)
+
+mv = memoryview(random_byte_array)
+
+# Оновлюємо перший індекс mv на Z
+mv[1] = 90
+print('After updation:', random_byte_array)
