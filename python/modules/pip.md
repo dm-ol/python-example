@@ -2,6 +2,7 @@
 
 ## Commands:
   install                     Install packages.
+  install -U                  Update packages.
   download                    Download packages.
   uninstall                   Uninstall packages.
   freeze                      Output installed packages in requirements format.
