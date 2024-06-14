@@ -50,3 +50,4 @@
                               Silence deprecation warnings for upcoming unsupported Pythons.
   --use-feature <feature>     Enable new functionality, that may be backward incompatible.
   --use-deprecated <feature>  Enable deprecated functionality, that will be removed in the future.
+  --[user name]               Install packages for specific user.
