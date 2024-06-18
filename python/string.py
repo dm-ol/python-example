@@ -6,11 +6,21 @@ print(city)
 fav_city = "My favorite city is"  # Приклад строки з декількох слів
 print(fav_city, city)
 
-# Приклад строки в декілька рядків
+# Приклад строки в декілька рядків """ """
 place = """My favorite place is the beach.
 I love the feeling of the soft sand
 between my toes and the warm sun on my skin."""
 print(place)
+
+# or ''' '''
+
+multiline = '''Line #1
+Line #2
+Line #3'''
+
+print(multiline)
+print(len(multiline))
+
 
 # Визначення типу за допомогою type
 print(type(city))
