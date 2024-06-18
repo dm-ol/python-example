@@ -14,3 +14,24 @@ print(5 * 'a')
 print('b' * 4)
 
 # Примітка: скорочені варіанти наведених вище операторів також застосовуються до рядків (+=і*=).
+
+
+# Оператор in (він просто перевіряє, чи його лівий аргумент (рядок) можна знайти будь-де в межах правого аргументу (іншого рядка)).
+
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+
+print("f" in alphabet)
+print("F" in alphabet)
+print("1" in alphabet)
+print("ghi" in alphabet)
+print("Xyz" in alphabet)
+
+# ператор not in (він просто перевіряє, чи його лівий аргумент (рядок) відсутній в межах правого аргументу (іншого рядка)).
+
+alphabet = "abcdefghijklmnopqrstuvwxyz"
+
+print("f" not in alphabet)
+print("F" not in alphabet)
+print("1" not in alphabet)
+print("ghi" not in alphabet)
+print("Xyz" not in alphabet)
