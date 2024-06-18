@@ -30,3 +30,13 @@ print(number.replace("B", "P"))  # ParK
 
 # Demonstrating the center() method:
 print('[' + 'alpha'.center(10) + ']')
+
+# Метод isalnum() перевіряє, чи рядок містить лише цифри або букви (літери)
+
+# Demonstrating the isalnum() method:
+print('lambda30'.isalnum())
+print('lambda'.isalnum())
+print('30'.isalnum())
+print('@'.isalnum())
+print('lambda_30'.isalnum())
+print(''.isalnum())
