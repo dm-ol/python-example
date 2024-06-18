@@ -25,3 +25,8 @@ print(number.lower())  # bark
 print(number.title())  # Bark
 print(number.capitalize())  # Bark
 print(number.replace("B", "P"))  # ParK
+
+# Метод center() створює копію вихідного рядка, намагаючись розташувати його всередині поля заданої ширини.
+
+# Demonstrating the center() method:
+print('[' + 'alpha'.center(10) + ']')
