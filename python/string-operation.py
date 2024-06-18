@@ -26,7 +26,7 @@ print("1" in alphabet)
 print("ghi" in alphabet)
 print("Xyz" in alphabet)
 
-# ператор not in (він просто перевіряє, чи його лівий аргумент (рядок) відсутній в межах правого аргументу (іншого рядка)).
+# Оператор not in (він просто перевіряє, чи його лівий аргумент (рядок) відсутній в межах правого аргументу (іншого рядка)).
 
 alphabet = "abcdefghijklmnopqrstuvwxyz"
 
@@ -35,3 +35,30 @@ print("F" not in alphabet)
 print("1" not in alphabet)
 print("ghi" not in alphabet)
 print("Xyz" not in alphabet)
+
+# Функція min() для рядків (відповідає номеру таблиці ASCII)
+
+# Demonstrating min() - Example 1:
+print(min("aAbByYzZ"))
+
+
+# Demonstrating min() - Examples 2 & 3:
+t = 'The Knights Who Say "Ni!"'
+print('[' + min(t) + ']')
+
+t = [0, 1, 2]
+print(min(t))
+
+
+# Функція max() для рядків (відповідає номеру таблиці ASCII)
+
+# Demonstrating min() - Example 1:
+print(max("aAbByYzZ"))
+
+
+# Demonstrating min() - Examples 2 & 3:
+t = 'The Knights Who Say "Ni!"'
+print('[' + max(t) + ']')
+
+t = [0, 1, 2]
+print(max(t))
