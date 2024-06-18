@@ -20,3 +20,12 @@ for character in the_string:
     print(character, end=' ')
 
 print()
+
+
+# Метод index () (це метод, а не функція) шукає послідовність з початку,
+# щоб знайти перший елемент значення, указаного в його аргументі .
+
+# Demonstrating the index() method:
+print("aAbByYzZaA".index("b"))
+print("aAbByYzZaA".index("Z"))
+print("aAbByYzZaA".index("A"))
