@@ -1,5 +1,7 @@
 # Errors
 
+<https://docs.python.org/3.6/library/exceptions.html>
+
 ## ZeroDivisionError
 
 З'являється при спробі нав'язати Python ділення на нуль, тобто виконання будь-якої операції,
