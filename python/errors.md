@@ -44,11 +44,21 @@ short_list.depend(3)
 замість того, щоб маскувати помилки, які ви допустили.
 
 ## ArithmeticError
-Розташування: BaseException ← Exception ← ArithmeticError
 
+Розташування: BaseException ← Exception ← ArithmeticError
 Опис: абстрактний виняток, включаючи всі винятки, викликані арифметичними операціями, як-от ділення на нуль або недійсний домен аргументу
 
 ## AssertionError
-Розташування: BaseException ← Exception ← AssertionError
 
+Розташування: BaseException ← Exception ← AssertionError
 Опис: конкретний виняток, викликаний інструкцією assert, коли її аргумент обчислюється як False, None, 0 або порожній рядок
+
+## BaseException
+
+Розташування: BaseException
+Опис: найзагальніший (абстрактний) з усіх винятків Python – усі інші винятки включені до цього; можна сказати, що наступні дві гілки за винятком еквівалентні: except: and except BaseException:.
+
+## IndexError
+
+Розташування: BaseException ← Exception ← LookupError ← IndexError
+Опис: конкретний виняток, який виникає під час спроби отримати доступ до неіснуючого елемента послідовності (наприклад, елемента списку)
