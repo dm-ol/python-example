@@ -34,3 +34,10 @@ print('divmod(7.5, 2.5) = ', divmod(7.5, 2.5))
 
 # Функція divmod() з дробовими аргументами
 print('divmod(2.6, 0.5) = ', divmod(2.6, 0.5))
+
+# Функція divmod() у Python з нечисловими аргументами (TypeError)
+
+# Функція divmod() з рядковими аргументами
+a = divmod("Jeff", "Bezos")
+
+print('The divmod of Jeff and Bezos is = ', a)
