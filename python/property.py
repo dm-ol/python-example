@@ -67,3 +67,40 @@ p = Person('Adam')
 print("The name is:", p.name)
 p.name = 'John'
 del p.name
+
+
+# Використання декоратора @property
+
+class Person:
+    def __init__(self, name):
+        self._name = name
+
+    @property
+    def name(self):
+        print('Getting name')
+        return self._name
+
+    @name.setter
+    def name(self, value):
+        print('Setting name to ' + value)
+        self._name = value
+
+    @name.deleter
+    def name(self):
+        print('Deleting name')
+        del self._name
+
+
+p = Person('Adam')
+print('The name is:', p.name)
+p.name = 'John'
+del p.name
+
+# Тут замість використання функції property() ми використали декоратор @property.
+
+# По-перше, ми вказуємо, що метод name() є атрибутом класу Person. Це робиться за допомогою @property перед геттером,
+# як показано у програмі. Далі ми використовуємо атрибут name для вказівки сеттера та делітера.
+# Це робиться за допомогою @name.setter для методу сеттера та @name.deleter для методу делітера.
+# Зверніть увагу на те, що ми використали той же метод name() з різними визначеннями для визначення геттера, сеттера та делітера.
+
+# Тепер, коли ми використовуємо p.name, він внутрішньо (під капотом) викликає відповідний геттер, сеттер і делітер.
