@@ -27,3 +27,15 @@ print(all(l))
 # Порожній ітерований об'єкт
 l = []
 print(all(l))
+
+# Як функція all() працює з рядками?
+
+s = "This is good"
+print(all(s))
+
+# '0' дорівнює True, оскільки це символ рядка
+s = '000'
+print(all(s))
+
+s = ''
+print(all(s))
