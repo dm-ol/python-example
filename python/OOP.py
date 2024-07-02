@@ -63,6 +63,39 @@ class Dog(Animal):
     def bark(self):
         print("I can bark! Woof woof!!")
 
+# Спадкування дозволяє створювати новий клас на основі вже існуючого.
+# Таким чином, можна створити новий клас, взявши за основу всі методи та атрибути іншого.
+
+# В даному прикладі клас Person є батьківським класом, також його називають базовим класом чи суперклассом.
+# А клас Employee називається дочірнім класом або підкласом.
+
+
+class Person:
+    def __init__(self, name):
+        self.name = name
+
+    def get_name(self):
+        return self.name
+
+    def is_employee(self):
+        return False
+
+
+class Employee(Person):
+    def is_employee(self):
+        return True
+
+
+john = Person('John')  # екземпляр класу Person
+print(john.get_name(), john.is_employee())
+
+# Output: John False
+
+ella = Employee('Ella')  # екземпляр класу Employee
+print(ella.get_name(), ella.is_employee())
+
+# Output: Ella True
+
 
 # Створюємо об'єкт класу Dog
 dog1 = Dog()
