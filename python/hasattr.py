@@ -14,3 +14,17 @@ person = Person()
 
 print("Person's age:", hasattr(person, "age"))
 print("Person's salary:", hasattr(person, "salary"))
+
+# Функція hasattr() в Python
+
+
+class Car:
+    brand = "Ford"
+    number = 7786
+
+
+car = Car()
+
+print("The car class has brand:", hasattr(Car, "brand"))
+print("The car class has number:", hasattr(Car, "number"))
+print("The car class has specs: ", hasattr(Car, "specs"))
