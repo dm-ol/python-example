@@ -27,3 +27,22 @@ print(list(enumerateGrocery))
 # Змінюємо лічильник, вказаний за замовчуванням
 enumerateGrocery = enumerate(grocery, 10)
 print(list(enumerateGrocery))
+
+
+# Цикл і перелічувальний об’єкт
+
+grocery = ['bread', 'milk', 'butter']
+
+for item in enumerate(grocery):
+    print(item)
+
+print()
+
+for count, item in enumerate(grocery):
+    print(count, item)
+
+print()
+
+# Змінюємо стартове значення, вказане за замовчуванням
+for count, item in enumerate(grocery, 100):
+    print(count, item)
