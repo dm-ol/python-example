@@ -13,3 +13,17 @@ enumerate_languages = enumerate(languages)
 
 # Конвертуємо перелічувальний об'єкт в список
 print(list(enumerate_languages))
+
+# Робота функції enumerate()
+
+grocery = ['bread', 'milk', 'butter']
+enumerateGrocery = enumerate(grocery)
+
+print(type(enumerateGrocery))
+
+# Перетворюємо на список
+print(list(enumerateGrocery))
+
+# Змінюємо лічильник, вказаний за замовчуванням
+enumerateGrocery = enumerate(grocery, 10)
+print(list(enumerateGrocery))
