@@ -2,7 +2,7 @@
 # Лічильник посилань допомагає при перевірці, чи слід виконувати складання сміття.
 # Складальник сміття видаляє об'єкт із пам'яті, якщо на нього нічого не посилається.
 
-import types
+import ctypes
 
 
 # Створюємо об'єкт списку, на який посилається змінна
@@ -15,6 +15,6 @@ another_list = my_list
 my_list_address = id(my_list)
 
 # Отримуємо кількість посилань на об'єкт
-ref_count = c_types.c_long.from_address(my_list_address)
+ref_count = ctypes.c_long.from_address(my_list_address)
 
 print(f'Посилань на об"єкт: {ref_count.value}')
