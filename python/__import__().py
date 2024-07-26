@@ -10,7 +10,7 @@
 #    fromlist — назви об’єктів чи підмодулів, які потрібно імпортувати за ім’ям;
 #    level — вказуємо, використовувати абсолютний чи відносний імпорт.
 
-__import__(name, globals=None, locals=None, fromlist=(), level=0)
+# __import__(name, globals=None, locals=None, fromlist=(), level=0)
 
 # Як працює функція __import__()?
 
