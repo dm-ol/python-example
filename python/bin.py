@@ -24,7 +24,9 @@ class Quantity:
         return apple + orange + grapes
 
 
+# Тут ми передали об’єкт класу Quantity у функцію bin() і отримали помилку TypeError через те, що ми використали “нецілочисельний” клас.
 print('The binary equivalent of quantity is:', bin(Quantity()))
+
 
 # Приклад №3: Функція bin() з методом __index__() для “нецілочисельного класу”
 
