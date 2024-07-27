@@ -21,3 +21,19 @@ string = "Python is interesting."
 # Рядок з кодуванням 'utf-8'
 arr = bytearray(string, 'utf-8')
 print(arr)
+
+
+# Масив байтів вказаного цілочисельного розміру
+
+size = 5
+
+arr = bytearray(size)
+print(arr)
+
+
+# Масив байтів з ітерованого списку
+
+rList = [1, 2, 3, 4, 5]
+
+arr = bytearray(rList)
+print(arr)
