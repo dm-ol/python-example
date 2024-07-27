@@ -40,3 +40,26 @@ print(any(s))
 # False, оскільки ітерований об'єкт порожній
 s = ''
 print(any(s))
+
+
+# Використання функції any() зі словниками в Python
+
+# 0 дорівнює False
+d = {0: 'False'}
+print(any(d))
+
+# 1 дорівнює True
+d = {0: 'False', 1: 'True'}
+print(any(d))
+
+# 0 та False дорівнюють False
+d = {0: 'False', False: 0}
+print(any(d))
+
+# Ітерований об'єкт порожній
+d = {}
+print(any(d))
+
+# '0' дорівнює True
+d = {'0': 'False'}
+print(any(d))
