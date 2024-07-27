@@ -11,3 +11,28 @@ message = 'Python is fun'
 # Конвертуємо рядок у байти
 byte_message = bytes(message, 'utf-8')
 print(byte_message)
+
+
+# Конвертація рядка в об’єкт bytes
+
+string = "Python is interesting."
+
+# Рядок з кодуванням 'utf-8'
+arr = bytes(string, 'utf-8')
+print(arr)
+
+
+# Створення об’єкта bytes вказаного цілочисельного розміру
+
+size = 5
+
+arr = bytes(size)
+print(arr)
+
+
+# Конвертація ітерованого списку в об’єкт bytes
+
+rList = [1, 2, 3, 4, 5]
+
+arr = bytes(rList)
+print(arr)
