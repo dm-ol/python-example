@@ -56,3 +56,47 @@ person.display()
 
 person1 = Person.fromBirthYear('John',  1985)
 person1.display()
+
+
+# 2. Правильне створення об’єкта у наслідуванні
+# Щоразу, коли ми отримуємо похідний клас шляхом реалізації фабричного методу як методу класу, це гарантує правильне створення об’єкта похідного класу.
+# Ми можемо створити статичний метод для вищенаведеного прикладу, але створюваний ним об’єкт завжди буде запрограмований як базовий клас.
+# Але коли ми використовуємо метод класу, він створює правильний екземпляр похідного класу.
+
+# Приклад №3: Як працює метод класу в наслідуванні?
+
+
+# Випадковий Person
+
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    @staticmethod
+    def fromFathersAge(name, fatherAge, fatherPersonAgeDiff):
+        return Person(name, date.today().year - fatherAge + fatherPersonAgeDiff)
+
+    @classmethod
+    def fromBirthYear(cls, name, birthYear):
+        return cls(name, date.today().year - birthYear)
+
+    def display(self):
+        print(self.name + "'s age is: " + str(self.age))
+
+
+class Man(Person):
+    sex = 'Male'
+
+
+man = Man.fromBirthYear('John', 1985)
+print(isinstance(man, Man))
+
+man1 = Man.fromFathersAge('John', 1965, 20)
+print(isinstance(man1, Man))
+
+
+# Тут використання статичного методу створення екземпляра класу вимагає, щоб ми запрограмували тип екземпляра під час створення.
+# Це явно викликає проблему під час успадкування Man від Person. Метод fromFathersAge() повертає не об’єкт Man,
+# а об’єкт Person його базового класу. Це порушує парадигму ООП. Використання методу класу fromBirthYear() може
+# забезпечити ООП-орієнтованість коду, оскільки він приймає в якості першого параметру сам клас і викликає його фабричний метод.
