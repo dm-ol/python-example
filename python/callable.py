@@ -14,3 +14,23 @@ def testFunction():
 
 y = testFunction
 print(callable(y))
+
+
+# Викликаний об’єкт
+
+class Foo:
+    def __call__(self):
+        print('Print Something')
+
+
+print(callable(Foo))
+
+
+class Foo:
+    def __call__(self):
+        print('Print Something')
+
+
+InstanceOfFoo = Foo()
+
+InstanceOfFoo()
