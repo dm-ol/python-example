@@ -34,3 +34,28 @@ class Foo:
 InstanceOfFoo = Foo()
 
 InstanceOfFoo()
+
+
+# Об’єкт може викликатися, але не викликається
+
+class Foo:
+    def printLine(self):
+        print('Print Something')
+
+
+print(callable(Foo))
+
+
+# Об’єкт класу Foo може викликатися, але не викликається. Наступний код спричинить помилку:
+
+class Foo:
+    def printLine(self):
+        print('Print Something')
+
+
+print(callable(Foo))
+
+InstanceOfFoo = Foo()
+
+# Тут помилка
+InstanceOfFoo()
