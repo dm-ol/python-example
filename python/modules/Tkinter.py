@@ -55,3 +55,29 @@ label.pack()
 button.pack()
 
 root.mainloop()
+
+
+# Розробка інтерактивних форм
+
+def submit_form():
+
+    user_input = entry.get()
+
+    result_label.config(text=f"Привіт, {user_input}!")
+
+
+root = tk.Tk()
+
+entry = tk.Entry(root)
+
+submit_button = tk.Button(root, text="Відправити", command=submit_form)
+
+result_label = tk.Label(root, text="Введіть ваше ім'я:")
+
+entry.pack()
+
+submit_button.pack()
+
+result_label.pack()
+
+root.mainloop()
