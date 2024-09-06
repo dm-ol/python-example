@@ -46,3 +46,8 @@ print()
 # Змінюємо стартове значення, вказане за замовчуванням
 for count, item in enumerate(grocery, 100):
     print(count, item)
+
+
+list = 110, 20, 30, 40, 50, 60, 701
+for i, res in enumerate(list):
+    print(i, ":", res)
