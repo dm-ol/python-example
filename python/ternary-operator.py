@@ -32,3 +32,11 @@ else:
 # Ternary
 
 print("Наступний рівень") if player_points > 50 else print("Повторити рівень")
+
+
+# Example
+
+age = int(input("Enter your age:", ))
+
+status = "Adult" if age >= 18 else "Young"
+print(status)
