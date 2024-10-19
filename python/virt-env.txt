@@ -1,0 +1,24 @@
+# Віртуальне оточення — це ізольоване середовище, яке має свої локальні інтерпретатори та пакети,
+# незалежні від глобального інтерпретатора та інших оточень.
+# У стандартній бібліотеці Python третьої версії є пакет venv,
+# який дозволяє створювати віртуальні оточення зручно та швидко. Приклад представлений нижче.
+
+→ ~ Project python3 - m venv ./venv
+→ ~ Project source venv/bin/activate
+(venv) → ~ pip freeze
+(venv) → ~
+(venv) → ~ pip install django
+Collecting django
+...
+Installing collected packages: sqlparse, asgiref, pytz, django
+Successfully installed asgiref-3.3.1 django-3.1.7 pytz-2021.1 sqlparse-0.4.1
+(venv) → ~
+(venv) → ~ pip freeze
+asgiref == 3.3.1
+Django == 3.1.7
+pytz == 2021.1
+sqlparse == 0.4.1
+(venv) → ~ deactivate
+
+# Скрипт activate у директорії bin призначений для активації оточення, а команда deactivate у вже активованому оточенні — для виходу з нього.
+# Після активації в терміналі має з'явитися назва вашого віртуального оточення в круглих дужках.
